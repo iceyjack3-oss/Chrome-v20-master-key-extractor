@@ -12,4 +12,4 @@ Unlike traditional methods that rely on high-privilege system escalation or nois
 * **Hardware Breakpoints:** Registers native x64 hardware breakpoints via the Win32 Debugging API (`SetThreadContext`) to intercept the control flow at the precise instruction containing the decrypted master key, capturing the plaintext `v20_master_key` directly from the CPU registers.
 * **Thread Context Isolation:** Cleanly handles thread suspension and context synchronization to ensure absolute execution stability on Windows x64 without crashing the target browser process.
 
-For more details on the underlying discovery and methodology, look up the **Gen Digital void stealer debugger technique**.
+For more details on the underlying discovery and methodology, look up the **Gen Digital void stealer debugger technique write-up**.
